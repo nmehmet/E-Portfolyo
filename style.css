@@ -14,6 +14,7 @@ header
     backdrop-filter: blur(30px);
 
     border-bottom: 1px solid #1f1f1f;
+    background-color: rgba(15, 15, 15, 0.7);
 }
 
 .header-container
@@ -77,7 +78,7 @@ header
     padding: 8px 16px;
     border: 1px solid #00e0ff;
     border-radius: 999px;
-    color: 00e0ff;
+    color: #00e0ff;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -200,6 +201,7 @@ section
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    padding-left: 20px;
 }
 
 .skill-card li 
@@ -209,7 +211,6 @@ section
     border-radius: 6px;
     background-color: #141414;
 
-    margin-left: 20px;
     font-size: 0.95rem;
     color: #cfcfcf;
 }
@@ -283,6 +284,22 @@ section
     margin-top: 15px;
     color: #cfcfcf;
     line-height: 1.5;
+
+    animation:fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn 
+{
+    from 
+    { 
+        opacity: 0;
+        transform: translateY(-4px);  
+    }
+    to 
+    { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
 }
 
 .contact-container 
@@ -344,22 +361,121 @@ section
 {
     color: #00e0ff;
 }
+footer 
+{
+    text-align: center;
+    padding:30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid #1f1f1f;
+}
 
 @media (max-width: 768px)
 {
+    main 
+    {
+        padding: 20px 10px;
+    }
+    section 
+    {
+        margin-bottom: 60px;
+    }
+    body 
+    {
+        line-height: 1.7;
+    }
+    .header-container
+    {
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .logo
+    {
+        font-size: 1.1rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .nav-links 
+    {
+        justify-content: center;
+        gap: 12px 16px;
+        flex-wrap: wrap;
+    }
+    .nav-links a
+    {
+        font-size: 0.85rem;
+    }
+    .cv-button
+    {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
     .about-container
     {
+        gap: 24px;
+        padding: 0;
         flex-direction: column;
         text-align: center;
     }
-
+    .about-text h2
+    {
+        font-size: 1.6rem;
+    }
     .about-text p
     {
         margin: 0 auto;
+        font-size: 1rem;
+        margin: 0 auto;
     }
-
+    .about-image img
+    {
+        width: 200px;
+    }
     .skills-grid 
     {
         grid-template-columns: 1fr;
+        gap: 20px;  
+    }
+    .skill-card 
+    {
+        padding: 20px;
+    }
+     .skill-card h3 
+     {
+        font-size: 1.1rem;
+    }
+
+    .skill-card li 
+    {
+        font-size: 0.9rem;
+    }
+     .project-item 
+    {
+        padding: 18px;
+    }
+
+    .project-item summary 
+    {
+        font-size: 1rem;
+    }
+
+    .project-item p 
+    {
+        font-size: 0.95rem;
+    }
+    .contact-list li 
+    {
+        font-size: 0.95rem;
+        padding : 14px 16px;
+    }
+    .contact-list i 
+    {
+        font-size: 1.2rem;
+    }
+    *{
+        -webkit-tap-highlight-color: transparent;
     }
 }
