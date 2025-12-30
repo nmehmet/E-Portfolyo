@@ -72,6 +72,14 @@ header
 {
     width: 100%;
 }
+nav a.active
+{
+    color: inherit;
+}
+nav a.active::after
+{
+    width: 100%;
+}
 
 .cv-button
 {
