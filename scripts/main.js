@@ -5,7 +5,7 @@
         let currentSection = "";
 
         sections.forEach(sections => {
-                const sectionTop = sections.offsetTop - 300;
+                const sectionTop = sections.offsetTop - 400;
                 if (scrollY >= sectionTop) {
                     currentSection = sections.getAttribute("id");
                 }
