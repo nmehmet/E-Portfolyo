@@ -2,7 +2,7 @@
 
 Bu depo, kişisel portfolyo sitemin kaynak kodlarını içerir. Modern, hızlı ve erişilebilir bir portfolyo deneyimi sunmak için sade (vanilla) HTML/CSS/JavaScript kullanılarak geliştirilmiştir.
 
-[Canlı Site (güncelleyin)](https://nmehmet.github.io) <!-- Bu linki kendi canlı site adresinle güncelle -->
+[Canlı Site]([https://nmehmet.github.io](https://nmehmet.github.io/E-Portfolyo/)) <!-- Bu linki kendi canlı site adresinle güncelle -->
 
 ---
 
