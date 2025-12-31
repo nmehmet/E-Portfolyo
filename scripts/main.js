@@ -1,20 +1,26 @@
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section');
 
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav a");
-    window.addEventListener("scroll", () => {
-        let currentSection = "";
+const options = {
+    threshold: 0.4
+};
 
-        sections.forEach(sections => {
-                const sectionTop = sections.offsetTop - 500;
-                if (scrollY >= sectionTop) {
-                    currentSection = sections.getAttribute("id");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if(link.getAttribute("href") === `#${id}`) {
+                    console.log(link);
+                    link.classList.add("active");
                 }
-        });
+            });
+        }
+    });   
+}, options);
 
-        navLinks.forEach(link => {
-            link.classList.remove("active");
-            if(link.getAttribute("href") === `#${currentSection}`) {
-                link.classList.add("active");
-            }
-        });
-    });
+sections.forEach((section) => {
+    observer.observe(section);
+});
