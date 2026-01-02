@@ -16,6 +16,7 @@
 
     <script src="https://kit.fontawesome.com/97d854893a.js" crossorigin="anonymous"></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/nmg.png" type="image/x-icon">
@@ -46,9 +47,9 @@
                     <h2>About</h2>
                     <p>
                         &nbsp My name is Necdet Mehmet Güneş, and I am a computer engineer specializing in backend development.
-                        I have a strong passion for programming and I want to improve myself in this field. I had an internship
-                        experience at Burgan Bank as a backend developer, where I gained experience while developing cash Management
-                        systems and worked with .Net technologies , SQL databases, API organization and achitectures like onion architecture
+                        I have a strong passion for programming. I have hands-on experience as a backend developer
+                        at Burgan Bank as a backend developer, where I gained experience while developing cash Management
+                        systems and worked with .Net technologies , SQL databases, API organization and backend achitectures such as onion architecture
                         and repository pattern. I am eager to continue learning and growing in the field of backend development.   
                     </p>
                 </div>
@@ -63,6 +64,7 @@
                         <h3>Programing Languages</h3>
                         <ul>
                             <li>C#</li>
+                            <li>C</li>
                             <li>SQL</li>
                             <li>Java</li>
                             <li>Javascript</li>
@@ -71,25 +73,21 @@
                     <div class="skill-card">
                         <h3>Techs and Tools</h3>
                         <ul>
-                            <li>.Net</li>
+                            <li>.NET / ASP.NET Core</li>
                             <li>Entity Framework</li>
                             <li>HTML/CSS</li>
-                            <li>GRPC</li>
+                            <li>RESTful APIs</li>
                             <li>APISIX</li>
-                            <li>Git</li>
-                            <li>Automapper</li>
+                            <li>Git & GitHub</li>
                         </ul>
                     </div>
                     <div class="skill-card">
-                        <h3>Other Skills</h3>
+                        <h3>Concepts & Architectures</h3>
                         <ul>
-                            <li>Problem Solving</li>
-                            <li>Teamwork</li>
-                            <li>Time Management</li>
-                            <li>Effective Communication</li>
-                            <li>Microservices</li>
+                            <li>Microservice Architecture</li>
                             <li>Onion Architecture</li>
                             <li>Repository Pattern</li>
+                            <li>Clean Code Principles</li>
                         </ul>
                     </div>
                 </div>
@@ -101,23 +99,38 @@
                 <details class="project-item">
                     <summary>Automated Cheque Reporting On Fora</summary>
                     <p>
-                        Developed a system that automates the cheque reporting process on the Fora platform, 
-                        significantly reducing manual effort and improving accuracy.
+                        Developed a system that automates the cheque reporting process on the Fora platform.
+                    </p>
+                    <p>
+                        Technologies used: <strong>C#, .NET 4.8 , n8n, RESTful APIs and SQL</strong>.
                     </p>
                 </details>
                 <details class="project-item">
-                    <summary>Unity tutorial project</summary>
+                    <summary>External Company Payment Integrations</summary>
                     <p>
-                        Created a tutorial project using Unity to demonstrate basic game development concepts 
-                        and mechanics, providing a hands-on learning experience for beginners.
+                        I took place in a team developing integrations for external company payments, managing money flows between companies and our bank.
+                    </p>
+                    <p>
+                        Technologies used: <strong>C#, .NET Core, Entity Framework, SQL, RESTful APIs, APISIX, Microservices, HangFire</strong>.
                     </p>
                 </details>
                 <details class="project-item">
-                    <summary>This page</summary>
+                    <summary>Unity Tutorial Project</summary>
                     <p>
-                        Designed and developed this portfolio webpage to showcase my skills, projects, and contact information, 
-                        utilizing HTML and CSS for a clean and professional layout.
+                        I have followed a tutorial of a 3D game in Unity Using most of the basic features of Unity. You can access the project files 
+                        from <a href="https://github.com/nmehmet/KitchenChaos-tutorial-" target="_blank">here</a>.
                     </p>
+                    <div class="project-slider">
+                        <button class="slider-btn prev">&#10094;</button>
+                        <div class="slider-track">
+                            <img src="images/project1-1.png" alt="screenshot 1">
+                            <img src="images/project1-2.png" alt="screenshot 2">
+                            <img src="images/project1-3.png" alt="screenshot 3">
+                            <img src="images/project1-4.png" alt="screenshot 4">
+                        </div>
+                        <button class="slider-btn next">&#10095;</button>
+                    </div>
+                    <p>The objective of the game is to prepare and deliver the given recipes correctly within the time limit.</p>
                 </details>
             </div>
         </section>
